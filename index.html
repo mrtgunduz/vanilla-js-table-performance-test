@@ -1,61 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="style.css">
-    <title>Vanilla-js-get-table-data-perfomance</title>
-
+    <link rel="stylesheet" href="app.css">
+    <title>Dropdown & Pagination Example</title>
 </head>
 <body>
+ 
     <div class="container">
-        <!-- <div class="dropdown-container" id="dropdown-container">
-          <button class="dropdown-btn dropdown-triangle" type="button">
-            Data Getir
-          </button>
-          <div class="dropdown-content">
-            <a class="dropdown-item" href="#">10</a>
-            <a class="dropdown-item" href="#">20</a>
-            <a class="dropdown-item" href="#">30</a>
-            <a class="dropdown-item" href="#">40</a>
-          </div>
-        </div> -->
-        <!-- <div class="dropdown-container" id="dropdown-container">
-          <button class="dropdown-btn dropdown-triangle" type="button">
-            Dropdown
-          </button>
-          <div class="dropdown-content">
-            <a class="dropdown-item" href="#">Item 1 is a long name</a>
-            <a class="dropdown-item" href="#">Item 2</a>
-            <a class="dropdown-item" href="#">Item 3</a>
-            <a class="dropdown-item" href="#">Item 4</a>
-          </div>
-        </div> -->
-        <div class="dropdown-container" id="dropdown-container">
-          <button class="dropdown-btn dropdown-triangle" type="button">
-            Veri Getir
-          </button>
-          <div class="dropdown-content">
-            <a class="dropdown-item" href="#">10</a>
-            <a class="dropdown-item" href="#">20</a>
-            <a class="dropdown-item" href="#">30</a>
-            <a class="dropdown-item" href="#">40</a>
-          </div>
+        <div class="dropdown-container">
+            <button class="dropdown-btn dropdown-triangle" type="button">
+                Veri Getir
+            </button>
+            <div class="dropdown-content" id="dropdown-content">
+                <a class="dropdown-item" href="#">10</a>
+                <a class="dropdown-item" href="#">20</a>
+                <a class="dropdown-item" href="#">30</a>
+                <a class="dropdown-item" href="#">40</a>
+            </div>
         </div>
-      </div>
-      
-    <table class="table">
-        <tr>
-          <th>Name</th>
-          <th>Country</th>
-          <th>City</th>
-        </tr>
-        <tbody id="user-table">
-        </tbody>
-      </table>
-      <script type="module" src="app.js"></script>
+    </div>
 
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody id="user-table"></tbody>
+    </table>
+
+    <ul id="pagination" class="pagination"></ul>
+
+    <script type="module" src="app.js"></script>
 </body>
 </html>
